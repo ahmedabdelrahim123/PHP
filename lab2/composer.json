@@ -1,9 +1,0 @@
-{
-"require": {	
-    "eandroid/qr-code": "*"		
-    },	
-    "autoload": {	
-    "files": [ "config.php", "functions.php" ]		
-    }
-    }
-    
