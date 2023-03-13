@@ -57,7 +57,7 @@
         <div id="after_submit">
             <?php echo $error ?? NULL ?>
         </div>
-        <form id="contact_form" action="index.php" method="POST" enctype="multipart/form-data">
+        <form id="contact_form" action="index.php" method="POST" enctype="multipart/form-data" >
 
             <div class="row">
                 <label class="required" for="name">Your name:</label><br />
