@@ -1,7 +1,7 @@
 <?php 
 
 class Counter{
-    private $_count=0;
+    private $_count;
     public function __construct()
     {
         $this->_count= $this->get_count();
@@ -15,7 +15,7 @@ public function get_count(){
 }
 
 public function increament()
-{ if (isset($_SESSION[_session_key_counter]))
+{ if (! isset($_SESSION[_session_key_counter]))
      {    $this->_count++;
         $_SESSION[_session_key_counter]=true;
         return $this->_count;
